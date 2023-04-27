@@ -33,7 +33,7 @@ class Bot(BaseBot):
     if TYPE_CHECKING:
 
         async def send_msg(
-            self, *, user_id: str, message: Message, **kwargs: Any
+            self, *, user_id: str, message: Union[str, Message, MessageSegment], **kwargs: Any
         ) -> None:
             ...
 
